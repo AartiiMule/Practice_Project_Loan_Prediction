@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Insurance Charges Prediction</title>
+</head>
+<body style="background-color: rgb(118, 177, 118);">
+    
+    <h1> Loan Status Prediction </h1>
+    
+    <form method="GET" action = "/predict_Loan_Status">
+
+        <label>Gender:</label>
+        <select name = "Gender">
+            <option value = "male">Male</option>
+            <option value = "female">Female</option>
+        </select>
+        
+
+        <br>
+        <br>
+        
+
+        <label> Married:</label>
+        <select name = " Married">
+            <option value = "yes">Yes</option>
+            <option value = "no">No</option>
+        </select>
+
+        <br>
+        <br>
+
+
+        <label>Graduate:</label>
+        <select name = "Graduate">
+            <option value = "Graduate">Graduate</option>
+            <option value = "Not">Not</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label>Self_Employed:</label>
+        <label>Yes:</label> <input type = "radio" name="Self_Employed" value = "yes">
+        <label>No:</label> <input type = "radio" name="Self_Employed" value = "no">
+        </select>
+
+        <br>
+        <br>
+
+        <label>ApplicantIncome:</label>
+        <input type = "text" name = "ApplicantIncome">
+        </select>
+
+        <br>
+        <br>
+
+        <label>CoapplicantIncome:</label>
+        <input type = "text" name = "CoapplicantIncome">
+        </select>
+
+
+        <br>
+        <br>
+
+        <label>Loan_Amount:</label>
+        <input type = "text" name = "Loan_Amount">
+        </select>
+
+
+        <br>
+        <br>
+
+        <label>Loan_Amount_Term:</label>
+        <input type = "text" name = "Loan_Amount_Term">
+        </select>
+
+
+        <br>
+        <br>
+
+        <label>Credit_History:</label>
+        <input type = "text" name = "Credit_History">
+        </select>
+
+
+        <br>
+        <br>
+
+        <label>Property_Area:</label>
+        <select name = "Property_Area">
+            <option value = "Semiurban">Semiurban</option>
+            <option value = "Urban">Urban</option>
+            <option value = "Rural">Rural</option>
+        </select>
+
+        <br>
+        <br>
+
+            
+
+        <label> Dependents: </label>
+        <label for = "Dependents">
+        <select name = "Dependents" id="Dependents">
+            <option value = "0">0</option>
+            <option value = "2">2</option>
+            <option value = "1">1</option>
+            <option value = "3+">3+</option>
+        </select>
+
+        <br>
+        <br>
+
+            
+        <br>
+        <input type = "submit" value = "SUBMIT">
+
+        <br>
+        <p>LOAN_STATUS{{ prediction }}</p>
+
+    </form>
+
+
+</body>
+
+
+</html>
